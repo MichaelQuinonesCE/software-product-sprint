@@ -5,6 +5,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+      <script src="fetch.js"></script>
   </head>
   <body>
     <div id="content">
@@ -36,6 +37,12 @@
       <button onclick="addRandomGreeting()">Click me!</button>
       <div id="greeting-container"></div>
       <h1>____________________________</h1>
+      <h1>Do you want to see a button fetch?</h1>
+      <p>Click this button!</p>
+      <button onclick = "showServletContent();"> I fetch</button>
+     <p id = "message-container"> </p>
+     <h1>____________________________</h1>
+     <p>Click <a href = "/hello">here</a> to see the servlet's direct response</p>
     </div>
   </body>
 </html>
