@@ -1,5 +1,5 @@
 package com.google.sps.servlets;
-
+import java.util.*;
 import java.io.IOException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -12,7 +12,25 @@ public class HelloWorldServlet extends HttpServlet {
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-    response.setContentType("text/html;");
-    response.getWriter().println("I just fetched!");
+  
+    // Convert the server stats to JSON
+    String json = convertToJson();
+    
+    // Send the JSON as the response
+    response.setContentType("application/json;");
+    response.getWriter().println(json);
+  }
+  private String convertToJson() {
+    String json = "{";
+    json += "\"Name\": ";
+    json += "\"" + "Michael" + "\"";
+    json += ", ";
+    json += "\"Nickname\": ";
+    json += "\"" + "Mike" + "\"";
+    json += ", ";
+    json += "\"Place\": ";
+    json +=  "\"Puerto Rico\"";
+    json += "}";
+    return json;
   }
 }
