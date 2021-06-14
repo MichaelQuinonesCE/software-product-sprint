@@ -14,13 +14,13 @@ public class HelloWorldServlet extends HttpServlet {
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
   
     // Convert the server stats to JSON
-    String json = convertToJson();
+    String json = getResponse();
     
     // Send the JSON as the response
     response.setContentType("application/json;");
     response.getWriter().println(json);
   }
-  private String convertToJson() {
+  private String getResponse() {
     String json = "{";
     json += "\"Name\": ";
     json += "\"" + "Michael" + "\"";
