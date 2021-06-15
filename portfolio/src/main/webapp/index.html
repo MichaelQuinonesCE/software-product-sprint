@@ -7,7 +7,14 @@
     <script src="script.js"></script>
       <script src="fetch.js"></script>
   </head>
-  <body>
+    <body>
+        <form action="/form-handler" method="POST">
+            <p>Enter email and motive of contact:</p>
+            <textarea name="text-input">hello world</textarea>
+            <br/>
+            <input type="submit" />
+        </form>
+
     <div id="content">
       <h1>___________________</h1>
       <h1>Michaels' Portfolio!</h1>
@@ -37,10 +44,10 @@
       <button onclick="addRandomGreeting()">Click me!</button>
       <div id="greeting-container"></div>
       <h1>____________________________</h1>
-      <h1>Do you want to see a button fetch?</h1>
+      <h1>Click here to see JSON in action</h1>
       <p>Click this button!</p>
-      <button onclick = "showServletContent();"> I fetch</button>
-     <p id = "message-container"> </p>
+      <button onclick = "showServletContent()"> I fetch</button>
+     <div id = "message-container"> </div>
      <h1>____________________________</h1>
      <p>Click <a href = "/hello">here</a> to see the servlet's direct response</p>
     </div>
