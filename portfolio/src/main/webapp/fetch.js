@@ -16,6 +16,23 @@ async function showServletContent(){
          message.innerText = 'Place: '+ resp.Place;
   }
 }
+//Shows messages from Datastore
+async function showMessages(){
+    const responseServer = await fetch('/list-messages');
+    const resp = await responseServer.json();
+    const message = document.getElementById('datastore-messages');
+   // var ButtonString;
+    message.innerText = resp;
+    //console.log(resp);
+
+     for(var i =0; i <5; i++){
+        console.log(resp[i]);
+        //ButtonString = '<button>ButtonString</button>';
+        //ButtonString +='<button>ButtonString</button>';
+     }  
+   //  message.innerHTML = ButtonString;
+}
+
    function createListElement(text) {
         const liElement = document.createElement('li');
         liElement.innerText = text;
