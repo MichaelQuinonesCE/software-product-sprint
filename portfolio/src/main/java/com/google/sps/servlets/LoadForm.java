@@ -52,7 +52,7 @@ public class LoadForm extends HttpServlet {
       String name = entity.getString("name");
       String email = entity.getString("email");
       String message = entity.getString("message");
-      String [] content ={"Message ==>"+"Name:"+name, "||"+ "Email:"+ email,"||"+"Message:"+ message +
+      String [] content ={"Message ==>"+"Name:"+name,"||"+"Message:"+ message +
       "\n--------------------------------------------------------------------------------------\n"};
       messages.add(content);
     }
