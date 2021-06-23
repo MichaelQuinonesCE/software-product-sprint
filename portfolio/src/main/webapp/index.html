@@ -1,61 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-      <script src="fetch.js"></script>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js"></script>
+        <script src="fetch.js"></script>
+    </head>
     <body>
-      <nav class = "nav">
-           <span class ="menu"><a href="index.html"class = "menunav">Home</a></span>
-           <span class ="menu"><a href="Gallery.html"class = "menunav">Gallery</a></span>
-           <span class ="menu"><a href = "https://github.com/MichaelQuinonesCE"class = "menunav">Github</a></span>
-           <span class ="menu"><a href="Messages.html"class = "menunav">Messages</a></span>
-      </nav>
+        <nav class="nav">
+            <span class="menu"><a href="index.html" class="menunav">Home</a></span>
+            <span class="menu"><a href="Gallery.html" class="menunav">Gallery</a></span>
+            <span class="menu"><a href="https://github.com/MichaelQuinonesCE" class="menunav">Github</a></span>
+            <span class="menu"><a href="Messages.html" class="menunav">Messages</a></span>
+        </nav>
         <form action="/form-handler" method="POST">
-            <h1 style = "color:darkgray;text-align:left"> Enter email and motive of contact:</h1>
+            <h1 style="padding: 20px; margin-top: 50px; color: darkgray; text-align: left;">Enter email and motive of contact:</h1>
             <textarea name="name">Enter name</textarea>
             <textarea name="email">Enter email address</textarea>
             <textarea name="message">Message</textarea>
-            <br/>
+            <br />
             <input type="submit" />
         </form>
 
-    <div id="content">
-      <h1 style = "color:darkgray"> Michaels' Portfolio!</h1>
-      <img src="/images/Logo.jpeg" alt = "Logo_Portfolio">
-       <h1 style = "color:darkgray"> A little about me!</h1>
-            <p style = "color:lightgray">Hello, my name is Michael Quinones!<p>
-            <p style = "color:lightgray">   I am currently finishing my sophomore year under the science in computer engineering major. 
-            Computer science is a really interesting field to me because I have all of the creative possibilities one can imagine in order to construct software that can benefit others. 
-            Precisely, benefiting others is what most satisfies me because it gives me the opportunity to help others be successful at what they do. 
-            Now that our culture and society are rapidly being modernized through technology, software development proves to be a great tool to serve others.</p> 
-            <p style = "color:lightgray">   Also, working in groups is something that I profoundly enjoy. 
-            Working collectively puts me in the position not only to benefit others, but also to learn from others. 
-            There's nothing more gratifying than going through the thorough process of working in groups in order to accomplish complex tasks. 
-            After all is done, relationships were built in the process, and experience was gained. 
-            Stated this, I believe that the relationships and experience, a lot of hard work can be done and others can be benefited.   </p>
-            
-        <h1 style = "color:darkgray">Technical projects I have worked on</h1>
-        <ul>
-       <li style = "color:lightgray">Covid-19 basic Database(c++)</li>
-       <li style = "color:lightgray">College Scheduling System(Java)</li>
-       <li style = "color:lightgray">"InterCovid Project" Data Analizer(Java)</li>
-       <li style = "color:lightgray">Ultrasonic Sensor Measuring System(Arduino)</li>
-        </ul>
+        <div id="content">
+            <h1 style="color: darkgray;">Michaels' Portfolio!</h1>
+            <img src="/images/Logo.jpeg" alt="Logo_Portfolio" />
+            <h1 style="color: darkgray;">A little about me!</h1>
+            <p style="color: lightgray;">Hello, my name is Michael Quinones!</p>
+            <p></p>
+            <p style="color: lightgray;">
+                I am currently finishing my sophomore year under the science in computer engineering major. Computer science is a really interesting field to me because I have all of the creative possibilities one can imagine in order to
+                construct software that can benefit others. Precisely, benefiting others is what most satisfies me because it gives me the opportunity to help others be successful at what they do. Now that our culture and society are
+                rapidly being modernized through technology, software development proves to be a great tool to serve others.
+            </p>
+            <p style="color: lightgray;">
+                Also, working in groups is something that I profoundly enjoy. Working collectively puts me in the position not only to benefit others, but also to learn from others. There's nothing more gratifying than going through the
+                thorough process of working in groups in order to accomplish complex tasks. After all is done, relationships were built in the process, and experience was gained. Stated this, I believe that the relationships and experience,
+                a lot of hard work can be done and others can be benefited.
+            </p>
 
-     <footer class = "footer">
-        <span style = "font-weight: bold;">Technical skills learned at SPS</span>
-        <p style = "color:darkgray">Click the button below to get random facts about me!</p>
-        <button onclick="addRandomGreeting()">Click me!</button>
-        <div id="greeting-container"></div>
-        <p style = "color:darkgray">Click here to see JSON in action</p>
-        <button onclick = "showServletContent()"> I fetch</button>
-        <div id = "message-container"> </div>
-        <p style = "color:darkgray">Click <a href = "/hello">here</a> to see the servlet's direct response</p>
-    </footer>
-    </div>
-  </body>
+            <h1 style="color: darkgray;">Technical projects I have worked on</h1>
+            <ul>
+                <li style="color: lightgray;">Covid-19 basic Database(c++)</li>
+                <li style="color: lightgray;">College Scheduling System(Java)</li>
+                <li style="color: lightgray;">"InterCovid Project" Data Analizer(Java)</li>
+                <li style="color: lightgray;">Ultrasonic Sensor Measuring System(Arduino)</li>
+            </ul>
+
+            <footer class="footer">
+                <span style="font-weight: bold;">Technical skills learned at SPS</span>
+                <p style="color: darkgray;">Click the button below to get random facts about me!</p>
+                <button onclick="addRandomGreeting()">Click me!</button>
+                <div id="greeting-container"></div>
+                <p style="color: darkgray;">Click here to see JSON in action</p>
+                <button onclick="showServletContent()">I fetch</button>
+                <div id="message-container"></div>
+                <p style="color: darkgray;">Click <a href="/hello">here</a> to see the servlet's direct response</p>
+            </footer>
+        </div>
+    </body>
 </html>
