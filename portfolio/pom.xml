@@ -8,33 +8,32 @@
   <version>1</version>
 
   <properties>
-    <!-- Java 11 -->
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <jetty.version>9.4.38.v20210224</jetty.version>
 
-    <!-- Project-specific properties -->
+   
     <exec.mainClass>com.google.sps.ServerMain</exec.mainClass>
     <googleCloudProjectId>mquinones-sps-summer21</googleCloudProjectId>
   </properties>
 
   <dependencies>
-    <!-- Java Servlets API -->
+   
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
       <version>4.0.1</version>
     </dependency>
 
-    <!-- jsoup -->
+   
     <dependency>
       <groupId>org.jsoup</groupId>
       <artifactId>jsoup</artifactId>
       <version>1.8.3</version>
     </dependency>
 
-    <!-- Gson -->
+  
     <dependency>
       <groupId>com.google.code.gson</groupId>
       <artifactId>gson</artifactId>
@@ -46,8 +45,6 @@
   <artifactId>google-cloud-datastore</artifactId>
   <version>1.104.0</version>
 </dependency>
-
-    <!-- Jetty -->
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-server</artifactId>
