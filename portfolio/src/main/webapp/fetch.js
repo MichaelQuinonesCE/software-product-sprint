@@ -16,6 +16,14 @@ async function showServletContent(){
          message.innerText = 'Place: '+ resp.Place;
   }
 }
+//Shows messages from Datastore
+async function showMessages(){
+    const responseServer = await fetch('/list-messages');
+    const resp = await responseServer.json();
+    const message = document.getElementById('datastore-messages');
+    message.innerText = resp;
+}
+
    function createListElement(text) {
         const liElement = document.createElement('li');
         liElement.innerText = text;

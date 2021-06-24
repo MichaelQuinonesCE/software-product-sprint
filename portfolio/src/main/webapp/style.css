@@ -7,7 +7,7 @@
 #greeting-container {
   margin-top: 20px;
 }
-.nav{
+.nav {
     position: relative;
     background-color: silver;
     height: auto;
@@ -24,27 +24,26 @@
     text-align: center;
     font-size: 130%;
 }
-a.menunav:link,a.menunav:active,a.menunav:visited{
+a.menunav:link,a.menunav:active,a.menunav:visited {
     color:#fff;
     text-decoration: none;
 }
-a.menunav:hover{
+a.menunav:hover {
     color: skyblue;
     text-decoration: none;
 }
-body{
+body {
    /* background-color: darkgray;*/
     font-size: large;
     background-image: url(../images/Background.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
-textarea{
-   /* display: block;*/
-    margin-left: auto;
+textarea {
+  margin-left: auto;
   margin-right: auto;
 }
-.footer{
+.footer {
     width: 100%;
     height: auto;
     margin-top: 20px;
@@ -53,4 +52,31 @@ textarea{
     clear: both;
     background: snow;
     font-family: 'Times New Roman', Times, serif;
+}
+
+.nav {
+  overflow: hidden;
+  background-color: darkred;
+  position: fixed;
+  top: 0; 
+  width: 100%; 
+}
+.nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.nav a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
