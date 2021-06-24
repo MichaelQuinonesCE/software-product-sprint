@@ -50,7 +50,6 @@ public class LoadForm extends HttpServlet {
     while (results.hasNext()) {
       Entity entity = results.next();
       String name = entity.getString("name");
-      String email = entity.getString("email");
       String message = entity.getString("message");
       String [] content ={"Message ==>"+"Name:"+name,"||"+"Message:"+ message +
       "\n--------------------------------------------------------------------------------------\n"};
